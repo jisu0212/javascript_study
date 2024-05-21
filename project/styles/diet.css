@@ -1,0 +1,16 @@
+/* 디자인은 자유롭게! */
+main {
+    width:500px;
+    background-color: tomato;
+    margin:100px auto;
+    text-align: center;
+    padding:50px 0;
+}
+main h1 {}
+main p {}
+main ul {}
+main ul li {}
+main ul li #height {}
+main ul li #weight {}
+main ul li #goals {}
+main p #result {}
