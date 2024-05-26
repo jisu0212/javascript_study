@@ -137,11 +137,11 @@
 * `document.getElementsByTagName("태그명")`
 * `document.getElementsByClassName("클래스명")`
 * `document.getElementById("아이디명")`
-* `document.auerySelector("태그명")`
-* `document.auerySelector(".클래스명")`
-* `document.auerySelector("#아이디명")`
-* `document.auerySelectorAll("태그명")`
-* `document.auerySelectorAll(".클래스명")`
+* `document.querySelector("태그명")`
+* `document.querySelector(".클래스명")`
+* `document.querySelector("#아이디명")`
+* `document.querySelectorAll("태그명")`
+* `document.querySelectorAll(".클래스명")`
 * `getElements...`와 `querySelectorAll` 함수는 `index`를 사용해서 대상을 선택하므로 사용 시 주의가 필요하다.
 ------------------------------------
 ## 가족관계선택속성
@@ -156,8 +156,8 @@
 * DOM.firstChild, DOM.firstElementChild 등..
 * 각각 공백 포함, 공백 불포함하는 성격이 둘의 차이이다.
 * `lastChild`, `lastElementChild`
-* DOM의 자식이 여려개여서 마지막 자식을 선택할 때 이용할 수 있다.
-* 
+* DOM.lastChild, DOM.lastElementChild 등..
+* 각각 공백 포함, 공백 불포함하는 성격이 둘의 차이이다.
 * `nextSibling`, `nextElementSibling`
 * DOM의 다음 형제를 선택할 때 이용할 수 있다.
 * DOM.nextSibling, DOM.nextSibling.nextSibling 등..
