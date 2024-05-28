@@ -137,11 +137,11 @@
 * `document.getElementsByTagName("태그명")`
 * `document.getElementsByClassName("클래스명")`
 * `document.getElementById("아이디명")`
-* `document.querySelector("태그명")`
-* `document.querySelector(".클래스명")`
-* `document.querySelector("#아이디명")`
-* `document.querySelectorAll("태그명")`
-* `document.querySelectorAll(".클래스명")`
+* `document.auerySelector("태그명")`
+* `document.auerySelector(".클래스명")`
+* `document.auerySelector("#아이디명")`
+* `document.auerySelectorAll("태그명")`
+* `document.auerySelectorAll(".클래스명")`
 * `getElements...`와 `querySelectorAll` 함수는 `index`를 사용해서 대상을 선택하므로 사용 시 주의가 필요하다.
 ------------------------------------
 ## 가족관계선택속성
@@ -156,8 +156,8 @@
 * DOM.firstChild, DOM.firstElementChild 등..
 * 각각 공백 포함, 공백 불포함하는 성격이 둘의 차이이다.
 * `lastChild`, `lastElementChild`
-* DOM.lastChild, DOM.lastElementChild 등..
-* 각각 공백 포함, 공백 불포함하는 성격이 둘의 차이이다.
+* DOM의 자식이 여려개여서 마지막 자식을 선택할 때 이용할 수 있다.
+* 
 * `nextSibling`, `nextElementSibling`
 * DOM의 다음 형제를 선택할 때 이용할 수 있다.
 * DOM.nextSibling, DOM.nextSibling.nextSibling 등..
@@ -186,3 +186,21 @@
 * `조건 ? 조건값이 참일때 실행 : 조건값이 거짓일때 실행`
 * 조건 작성위치에 비교연산자를 사용한다.
 * 비교연산자 : <, >, ==, <=, >=, !=
+## 비교연산자
+* `a>b` : a가 b보다 크다
+* `a<b` : a가 b보다 작다
+* `a==b` : a와 b가 같다
+* `a===b` : a와 b가 데이터타입까지 같다(엄격)
+* `a!=b` : a와 b가 다르다
+* `a!==b` : a와 b가 데이터타입까지 다르다(엄격)
+* `a>=b` : a가 b보다 크거나 같다
+* `a<=b` : a가 b보다 작거나 같다
+### 논리적인 조건을 결합하거나 변경하는 데 사용하는 연산자
+*  `AND(&&)` : 양쪽 피연산자가 모두 참일때 결과는 참
+* `OR(||)` : 양쪽 피연산자 중 하나라도 참이면 결과는 참
+* `NOT(!)` : 피연산자의 논리 값을 반전함. 참이면 거짓 반환
+## 조건문 if
+### 1단 조건문
+* `if( 조건식 ){참일 경우 구문}`
+### 2단 조건문
+* `if( 조건식 ){참일 경우 구문}else{거짓일때 구문}`
