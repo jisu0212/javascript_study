@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if, else | js</title>
+    <script src="./script/boolean2.js" defer></script>
+    <style>
+        .info {
+            background-image:url(https://img.freepik.com/free-psd/birthday-vertical-blank-banner_23-2150453071.jpg?t=st=1716954836~exp=1716958436~hmac=347bdcbfce45d97829f1c5100edd29450a09eb3670987a22de4631778373488c&w=740);
+            background-repeat: no-repeat;
+            background-position: center;
+            margin:50px auto;
+            text-align: center;
+            border-radius: 20px;
+            padding: 20px 0; 
+        }
+        .info p {
+            padding:50px 0;
+            font-size: 1.25rem;
+        }
+        .info p input[type=text] {
+            line-height: 40px; width:250px;
+            border-radius: 5px;
+            border:0;
+            padding:0 10px;
+            text-align: center;
+            font-size: 1.25rem;
+        }
+        .info p #btn {
+            width:500px;
+            line-height: 60px;
+            border-radius: 10px;
+            border:0;
+            background-color: #fff;
+            color:darkmagenta;
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+        .info p #btn:hover {
+            background-color: #f5f5f5;
+            border:1px solid #b5b5b5;
+        }
+        .info .result {
+            font-size: 1.25rem;
+            font-weight: 600;
+            background-color: beige;
+            width:800px;
+            border-radius: 10px;
+            margin:0 auto;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="info">
+        <p>
+            <input type="text" id="year">년
+            <input type="text" id="month">월
+            <input type="text" id="day">일
+        </p>
+        <p>
+            <button type="button" id="btn">탄생화와 꽃말은?</button>
+        </p>
+        <p class="result"></p>
+    </div>
+</body>
+</html>
