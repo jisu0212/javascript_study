@@ -1,0 +1,52 @@
+html, body {
+    scroll-behavior: smooth;
+}
+.mouse {
+    /* width:50px; height:50px;
+    border-radius: 50%;
+    border:5px solid #fff; */
+    position:fixed; left:0; top:0; /* 초기위치 */
+    transform:translate(-50%, -50%);
+    pointer-events: none; /* 마우스 클릭 대상 해제 */
+}
+.mouse img {width:200px;}
+header {
+    top:100px; left:100px;
+    z-index: 999;
+    position:fixed;
+}
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+header .link {
+    display:flex;
+    flex-flow: row nowrap;
+}
+header .link a {
+    display:inline-block;
+    height:35px;
+    font-size: 1.25rem;
+    margin-right: 20px;
+    text-align: center;
+}
+header .link a:nth-child(4) {margin:0;}
+header .link a:hover{border-bottom:3px solid #222; font-weight: 700;}
+main .bg {height:100vh; background-size:cover;}
+main .bg:nth-child(1) {background-image:url(https://i.pinimg.com/originals/b7/0e/80/b70e80894e1d242640501c3d8b3a7034.jpg)}
+main .bg:nth-child(2) {background-image:url(https://i.pinimg.com/originals/88/d1/bc/88d1bc271f8ee648b43cd67ce94070a9.jpg)}
+main .bg:nth-child(3) {background-image:url(https://i.pinimg.com/originals/12/ff/fd/12fffd34906acb03db279fefc85d8922.jpg)}
+main .bg:nth-child(4) {background-image:url(https://i.pinimg.com/originals/95/6e/b7/956eb775072d66f2d807145d9e8da4ee.jpg)}
+nav {top:600px; left:100px; z-index: 999;
+position:fixed;}
+nav .link2 {}
+nav .link2 a {
+    background:#222;
+    width:20px; height:5px; margin-bottom: 20px;
+    border-radius: 10px;
+    transition:all 0.5s;
+    display:block;
+}
+nav .link2 .active {width:100px; background:#fff;}
+nav .link2 a:hover {background:#555;}
