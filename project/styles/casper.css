@@ -72,7 +72,7 @@ main .part1 .link a {
     padding:5px 20px;
 }
 main .part1 .mouse_img {
-    position:relative; top:570px;
+    position:relative; top:530px;
 }
 main .part1 .mouse_img img {
     width:50px;
@@ -81,7 +81,7 @@ main .part1 .mouse_img img {
 }
 @keyframes moving {
     0% {transform: translate(0, 0);}
-    100% {transform: translate(0, 50px);}
+    100% {transform: translate(0, 30px);}
 }
 /* part2 */
 main .part2 {
@@ -180,9 +180,7 @@ main .part4 .part4_right {
     text-align: right;
     position:relative; bottom:110px;
 }
-main .part4 .part4_right img {
-    width:500px;
-}
+main .part4 .part4_right img {width:500px;}
 /* part5 */
 main .part5 {
     background-color: #f5f5f5;
