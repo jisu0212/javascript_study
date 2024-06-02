@@ -40,8 +40,10 @@ header nav .gnb > li .sub li a {
 }
 header nav .gnb > li .sub li a img {width:170px; border-radius: 5px;}
 header .right {line-height: 70px;}
-header .right a {}
-header .right a img {}
+header .right a {margin-right:10px;}
+header .right a:first-child {display:none;}
+header .right a:last-child {margin: 0;}
+header .right a img {width:20px; height:24px;}
 /* part1 */
 main {}
 main .part1 {
@@ -226,22 +228,21 @@ main .part6 .part6_title .trim_link a {
 }
 main .part6 ul {
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 60px;
-    padding: 0 100px;
 }
 main .part6 ul li {
     text-align: center;
 }
 main .part6 ul li p {}
-main .part6 ul li p img {}
+main .part6 ul li p img {width:250px;}
 main .part6 ul li .part6_contents {
     padding-top: 10px;
 }
 main .part6 ul li .part6_contents h3 {
     color:#007fa8;
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
 }
 main .part6 ul li .part6_contents p {
     line-height: 1.2;

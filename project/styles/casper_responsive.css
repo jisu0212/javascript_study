@@ -1,0 +1,12 @@
+@media screen and (max-width:1300px){
+    header nav {display: none;}
+    header .right a:first-child {display:inline-block;}
+}
+@media screen and (max-width:760px){
+    main .part2 {flex-flow: column nowrap;}
+    footer address {margin:0;}
+    footer {flex-flow:column nowrap;}
+    footer address {flex-flow: column wrap; width:100%;}
+    footer address span {width:100%;}
+    main .part2 .second_right {width:100%; margin-top:20px;}
+}
