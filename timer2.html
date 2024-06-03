@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이머함수 | js</title>
+    <script src="./script/timer2.js" defer></script>
+    <style>
+        .wrap {
+            /* 움직이는 슬라이드가 실제 보이는 영역 */
+            width:500px; height:500px;
+            margin:0 auto;
+            border:10px solid #000;
+        }
+        .wrap .slide_container {position:relative;}
+        .wrap .slide_container .slide {
+            width:500px; height:500px; /* 개별 슬라이드 공통 크기 */
+            position:absolute; top:0; left:0;
+            font-size: 3rem; line-height: 400px; text-align: center;
+            /* opacity:0; transition: 0.3s; */
+        }
+        .wrap .slide_container .slide1 {background-color: yellow; opacity:1;}
+        .wrap .slide_container .slide2 {background-color: pink;}
+        .wrap .slide_container .slide3 {background-color: lightgreen;}
+    </style>
+</head>
+<body>
+    <div class="wrap"><!-- 묶음1 -->
+        <div class="slide_container"> <!-- 배너묶음2 -->
+            <div class="slide slide1">1</div>
+            <div class="slide slide2">2</div>
+            <div class="slide slide3">3</div>
+        </div>
+    </div>
+</body>
+</html>
