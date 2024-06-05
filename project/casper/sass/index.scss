@@ -18,7 +18,7 @@ header {
                 margin-right: $m-r100; @include pst-rel;
                 > a {font-weight: 700;}
                 .sub {
-                    @include pst-absol; top: 30px; left:0;
+                    @include pst-absol; width:max-content; top: 50px; left:0;
                     li {
                         a {
                             font-size: $font-91;
