@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper-1</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+        .swiper {width:500px; height:400px;}
+        /* swiper(main-slide) 슬라이드 옵션 포함 전체 부모 */
+        .main-slide {width:800px; margin: 50px auto;}
+        /* swiper-wrapper 개별 슬라이드(.swiper-slide) 묶음 부모 */
+        .main-slide .swiper-wrapper {}
+        /* swiper-slide 사용자가 보는 슬라이드 1개 영역(자식, 자손 태그 제한없음) */
+        .main-slide .swiper-wrapper .swiper-slide {
+            /* slide1~slide3 공통 속성 */
+            background-size: cover;
+            background-position: center;
+            color:#fff; font-size: 5rem;
+        }
+        .main-slide .swiper-wrapper .slide1 {background-image: url(https://i.pinimg.com/564x/cb/97/50/cb9750a6a6a859fde2c66e067d720f63.jpg);}
+        .main-slide .swiper-wrapper .slide2 {background-image: url(https://i.pinimg.com/564x/64/46/50/64465047c1133c01c203d54f078e666e.jpg);}
+        .main-slide .swiper-wrapper .slide3 {background-image: url(https://i.pinimg.com/564x/d6/28/8d/d6288d8f04ce33faf36c6f1d8c2a9be4.jpg);}
+        .sub-slide {}
+        .sub-slide .swiper-wrapper .sub-slide1 {background-image: url(https://i.pinimg.com/564x/c9/a6/35/c9a635d3edd9ae297b97d3013e896cca.jpg);}
+        .sub-slide .swiper-wrapper .sub-slide2 {background-image: url(https://i.pinimg.com/564x/9e/29/11/9e2911accf54dcddaab20ad0bf31b0b8.jpg);}
+        .sub-slide .swiper-wrapper .sub-slide3 {background-image: url(https://i.pinimg.com/564x/7e/c8/1d/7ec81dea8efdd77961ff380027bd5e83.jpg);}
+    </style>
+</head>
+<body>
+    <!-- swiper slide plugin 주의사항! -->
+    <!-- swiper 플러그인을 사용하려면 swiper가 제공하는 html, css, js 규칙을 반드시 지켜야한다. 특히 html의 가족관계 및 지정된 클래스명을 지켜야 적용되기 때문에 대소문자, 공백, 스펠링 모두 주의해서 사용해야 한다. 대신 swiper가 제공하는 기본 명칭 외에 추가 클래스명은 자유롭게 지정가능하다. -->
+    <div class="swiper main-slide">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1">1</div>
+            <div class="swiper-slide slide2">2</div>
+            <div class="swiper-slide slide3">3</div>
+        </div>
+    </div>
+    <div class="swiper sub-slide">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide sub-slide1">1</div>
+            <div class="swiper-slide sub-slide2">2</div>
+            <div class="swiper-slide sub-slide3">3</div>
+        </div>
+    </div>
+    <script>
+        // const 변수 = new Swiper('적용대상')
+        // const 변수 = new Swiper('적용대상', {옵션:값, 옵션:값,})
+        const swiper1 = new Swiper('.main-slide', {
+            //슬라이드 진행 방향
+            //direction:'vertical', //기본값 horizontal
+            //움직이지 않고 제자리 슬라이드 변환
+            //effect:'fade',
+            //큐브처럼 돌아가면서 슬라이드 변환
+            effect:'cube',
+            //cube 옵션: effect:'cube' 설정 시 가능
+            cubeEffect:{
+                shadow:true, //그림자 없애려면 shadow:false
+                shadowOffset:10, //기본값 20
+                shadowScale:1.5, //기본값 1
+            },
+            //자동재생
+            autoplay:{delay:1000}, //기본값 3000(3초)
+            //마지막 슬라이드에서 시작 슬라이드로 자연스럽게 변환
+            loop:true,//기본값 false
+        })
+        const swiper2 = new Swiper('.sub-slide',{
+            effect:'cards',
+            cardsEffect:{
+                perSlideRotate:10,
+            },
+            autoplay:{delay:1000},
+            loop:true,
+        })
+    </script>
+</body>
+</html>
