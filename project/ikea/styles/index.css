@@ -1,0 +1,195 @@
+main {
+    font-family: "Noto Sans KR",sans-serif;
+    width:100%;
+}
+main .part {}
+/* 공통 */
+main .part .title {
+    width:100%;
+    padding: 0 300px;
+}
+main .part .title .sub_title {
+    font-size: 1.875rem;
+    color:#0058ab;
+    font-weight: 700;
+}
+main .part .title .main_title {
+    font-size: 4.375rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+/* part1 */
+main .part1 {}
+main .part1 .main_video {
+    position:relative;
+    height:950px;
+    overflow:hidden;
+}
+main .part1 .main_video video {width:100%;}
+main .part1 .part1_contents {
+    background-image: linear-gradient(rgba(31,31,31,0.3),rgba(31,31,31,1));
+    padding:50px 300px;
+    position:absolute; bottom:0;
+    width:100%;
+}
+main .part1 .part1_contents h1 {width:133px;}
+main .part1 .part1_contents h1 a {}
+main .part1 .part1_contents h1 a img {width:100%;}
+main .part1 .part1_contents h2 {
+    font-size: 3.125rem;
+    color:#FBD914;
+    font-weight: 700;
+    margin: 20px 0;
+}
+main .part1 .part1_contents p {
+    color:#fff;
+    line-height: 1.7;
+}
+/* part2 */
+main .part2 {
+    background-image: linear-gradient(#996B13 80%, #FFB320 90%);
+}
+main .part2 .part2_bg {
+    background-color: #1f1f1f;
+    border-radius: 0 0 1000px 1000px;
+    text-align: center;
+    padding:200px 0;
+}
+main .part2 .part2_bg .part2_intro {margin-bottom: 57px;}
+main .part2 .part2_bg .part2_intro .intro_top {}
+main .part2 .part2_bg .part2_intro .intro_top p {}
+main .part2 .part2_bg .part2_intro .intro_top p img {}
+main .part2 .part2_bg .part2_intro .intro_top h3 {
+    color:#fff; font-size: 5rem;
+}
+main .part2 .part2_bg .part2_intro > p {}
+main .part2 .part2_bg .part2_intro > p img {
+    margin: 69px 0;
+}
+main .part2 .part2_bg .part2_intro > p:last-child img {
+    margin:0;
+}
+main .part2 .part2_bg .part2_intro2 {}
+main .part2 .part2_bg .part2_intro2 .whynot {
+    width:534px; margin:0 auto;
+}
+main .part2 .part2_bg .part2_intro2 .whynot h3 {
+    background-image: url(../images/crayon-02.png);
+    background-size: 100%;
+    background-position: center;
+    font-size: 6.25rem;
+    font-weight: 700;
+    color:#FFB320;
+}
+main .part2 .part2_bg .part2_intro2 p {
+    width:1321px; height: 852px; margin:43px auto;
+    border-radius: 20px; overflow: hidden;
+}
+main .part2 .part2_bg .part2_intro2 p img {
+    width: 101%;
+}
+main .part2 .part2_bg .part2_intro2 h3 {
+    font-size: 4.375rem;
+    font-weight: 700;
+    color:#FFB320;
+    line-height: 1.5;
+}
+/* part3 */
+main .part3 {
+    padding: 200px 0;
+    background-color: #FFB320;
+}
+main .part3 .title {}
+main .part3 .title .sub_title {}
+main .part3 .title .main_title {}
+main .part3 .part3_content {
+    margin:118px 0;
+}
+main .part3 .part3_content .content_img {
+    width:1620px; border-radius: 0 500px 500px 0;
+    overflow: hidden;
+}
+main .part3 .part3_content .content_img img {width:100%;}
+main .part3 .part3_content .content_text {width:100%; text-align: right;}
+main .part3 .part3_content .content_text p {
+    font-size: 1.875rem;
+    line-height: 1.7;
+}
+/* part4 */
+main .part4 {}
+/* part5 */
+main .part5 {}
+main .part5 .title {}
+main .part5 .title .sub_title {}
+main .part5 .title .main_title {}
+main .part5 .product_list {}
+main .part5 .product_list li {}
+main .part5 .product_list li p {}
+main .part5 .product_list li p img {}
+main .part5 .product_list li .product_info {}
+main .part5 .product_list li .product_info li {}
+main .part5 .product_list li .product_info li h2 {}
+main .part5 .product_list li .product_info li p {}
+main .part5 .product_list li .product_info li h2 span {}
+main .part5 .product_list li .product_info li a {}
+main .part5 .product_list li .product_info li a img {}
+main .part5 .more_link {}
+main .part5 .more_link span {}
+main .part5 .more_link img {}
+/* part6 */
+main .part6 {}
+main .part6 .title {}
+main .part6 .title .sub_title {}
+main .part6 .title .main_title {}
+main .part6 .service_list {}
+main .part6 .service_list li {}
+main .part6 .service_list li p {}
+main .part6 .service_list li p img {}
+main .part6 .service_list li .service_info {}
+main .part6 .service_list li .service_info h3 {}
+main .part6 .service_list li .service_info p {}
+main .part6 .service_list li .service_info a {}
+/* part7 */
+main .part7 {}
+main .part7 .title {}
+main .part7 .title .sub_title {}
+main .part7 .title .main_title {}
+main .part7 .title p {}
+main .part7 #participation_frm {}
+main .part7 #participation_frm fieldset {}
+main .part7 #participation_frm fieldset .skip {}
+main .part7 #participation_frm fieldset ul {}
+main .part7 #participation_frm fieldset ul li {}
+main .part7 #participation_frm fieldset ul li span {}
+main .part7 #participation_frm fieldset ul li input[name^=user] {}
+main .part7 #participation_frm fieldset ul li .gender_check {}
+main .part7 #participation_frm fieldset ul li .gender_check input[name=gender] {}
+main .part7 #participation_frm fieldset ul li .gender_check label[for=male] {}
+main .part7 #participation_frm fieldset ul li .gender_check label[for=female] {}
+main .part7 #participation_frm fieldset ul li #user_contents {}
+main .part7 #participation_frm fieldset ul li #photo_btn {}
+main .part7 #participation_frm fieldset ul li #photo_btn img {}
+main .part7 #participation_frm fieldset #submit_btn {}
+/* part8 */
+main .part8 {}
+main .part8 .counter {}
+main .part8 .counter span {}
+main .part8 .counter span em {}
+main .part8 .participate_slide {}
+main .part8 .participate_slide .swiper-wrapper {}
+main .part8 .participate_slide .swiper-wrapper .swiper-slide {}
+main .part8 .participate_slide .swiper-wrapper .swiper-slide img {}
+main .part8 a {}
+main .part8 a img {}
+/* footer */
+footer {}
+footer .sns {}
+footer .sns a {}
+footer .sns a img {}
+footer .ikea_info {}
+footer .ikea_info > span {}
+footer .ikea_info a {}
+footer .ikea_info a span {}
+footer .ikea_info2 {}
+footer .ikea_info2 span {}
+footer .ikea_info2 span a {}
