@@ -27,7 +27,7 @@ main .part1 .main_video {
 }
 main .part1 .main_video video {width:100%;}
 main .part1 .part1_contents {
-    background-image: linear-gradient(rgba(31,31,31,0.3),rgba(31,31,31,1));
+    background-image: linear-gradient(rgba(31,31,31,0.3) 0,rgba(31,31,31,1));
     padding:50px 300px;
     position:absolute; bottom:0;
     width:100%;
@@ -102,94 +102,243 @@ main .part3 {
 main .part3 .title {}
 main .part3 .title .sub_title {}
 main .part3 .title .main_title {}
-main .part3 .part3_content {
-    margin:118px 0;
-}
+main .part3 .part3_content {margin:118px 0;}
 main .part3 .part3_content .content_img {
-    width:1620px; border-radius: 0 500px 500px 0;
+    width:1470px; height: 577px; border-radius: 0 500px 500px 0;
     overflow: hidden;
 }
-main .part3 .part3_content .content_img img {width:100%;}
-main .part3 .part3_content .content_text {width:100%; text-align: right;}
+main .part3 .part3_content .content_img img {
+    width:100%; position:relative; bottom:180px;
+}
+main .part3 .part3_content .content_text {
+    width:100%;
+    position:relative;
+    margin-top:100px;
+}
 main .part3 .part3_content .content_text p {
     font-size: 1.875rem;
     line-height: 1.7;
+    text-align: center;
+}
+main .part3 .part3_content .content_text::after {
+    content: ''; display:inline-block;
+    width:400px; height:2px; background-color: #0058ab;
+    position:absolute; top:102px; right:0;
+}
+/* part3-cooking */
+main .part3 .part3_content:last-child {
+    border: 5px solid red; text-align: right;
+}
+main .part3 .part3_content:last-child .content_img {
+    border-radius: 500px 0 0 500px; 
+    border: 5px solid red; text-align: right;
+}
+main .part3 .part3_content:last-child .content_img img {
+    bottom:300px;
+}
+main .part3 .part3_content:last-child .content_text::after {
+    left:0;
 }
 /* part4 */
-main .part4 {}
+main .part4 {
+    width:100%; height:883px;
+    background-image: url(../images/event_ikea.png);
+}
 /* part5 */
-main .part5 {}
+main .part5 {
+    background-color: #0058ab;
+    border-radius: 0 0 500px 0;
+    padding:200px 0;
+}
 main .part5 .title {}
-main .part5 .title .sub_title {}
-main .part5 .title .main_title {}
-main .part5 .product_list {}
-main .part5 .product_list li {}
-main .part5 .product_list li p {}
-main .part5 .product_list li p img {}
-main .part5 .product_list li .product_info {}
-main .part5 .product_list li .product_info li {}
-main .part5 .product_list li .product_info li h2 {}
-main .part5 .product_list li .product_info li p {}
-main .part5 .product_list li .product_info li h2 span {}
-main .part5 .product_list li .product_info li a {}
-main .part5 .product_list li .product_info li a img {}
-main .part5 .more_link {}
-main .part5 .more_link span {}
-main .part5 .more_link img {}
+main .part5 .title .sub_title {color:#FFB320;}
+main .part5 .title .main_title {color:#fff;}
+main .part5 .product_list {
+    display:flex; flex-flow: row wrap;
+    justify-content: space-between;
+    width:1320px;
+    margin:89px auto;
+}
+main .part5 .product_list > li {
+    width:calc((100% / 3) - (45px / 2));
+    background-color: #fff;
+    margin-bottom: 50px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+main .part5 .product_list > li > a {height:345px;}
+main .part5 .product_list > li > a img {width:100%;}
+main .part5 .product_list > li .product_info {
+    text-align: center;
+    background-color: #fff;
+    padding:30px 0;
+}
+main .part5 .product_list > li .product_info li {
+    display:block; width:100%;
+    font-size: 1.25rem;
+}
+main .part5 .product_list > li .product_info li:nth-child(2) {
+    margin:15px 0;
+}
+main .part5 .product_list > li .product_info li h2 {margin-bottom: 10px; font-weight: 700;}
+main .part5 .product_list > li .product_info li:nth-child(2) h2 {margin-bottom: 5px;}
+main .part5 .product_list > li .product_info li p {}
+main .part5 .product_list > li .product_info li h2 span {
+    font-size: 1.875rem; font-weight: 700;
+}
+main .part5 .product_list > li .product_info li a:first-child{margin-right:20px;}
+main .part5 .product_list > li .product_info li a img {}
+main .part5 .more_wrap {text-align: right; background-color: red; margin: 0 300px;}
+main .part5 .more_wrap .more_link {
+    background-color: #fff;
+    border-radius: 500px;
+    width:213px; height: 66px; padding:0 30px;
+    display:flex; align-items: center; justify-content: space-between; font-size: 1.25rem;
+}
+main .part5 .more_wrap .more_link span {}
+main .part5 .more_wrap .more_link img {}
 /* part6 */
-main .part6 {}
+main .part6 {padding:100px 0;}
 main .part6 .title {}
 main .part6 .title .sub_title {}
 main .part6 .title .main_title {}
-main .part6 .service_list {}
-main .part6 .service_list li {}
-main .part6 .service_list li p {}
+main .part6 .service_list {
+    display: flex; justify-content: space-between;
+    width:1320px; margin: 89px auto 0;
+}
+main .part6 .service_list li {
+    width:350px; height:350px;
+    border-radius: 50%; display:flex; flex-flow: column nowrap;
+    align-items: center; justify-content: center; text-align: center;
+}
+main .part6 .service_list li:hover {
+    position:relative; bottom:15px;
+}
+main .part6 .service_list li:first-child {background-color: #0058ab;}
+main .part6 .service_list li:nth-child(2) {background-color: #FFB320;}
+main .part6 .service_list li:last-child {background-color: #007730;}
+main .part6 .service_list li p {margin-bottom: 20px;}
 main .part6 .service_list li p img {}
-main .part6 .service_list li .service_info {}
-main .part6 .service_list li .service_info h3 {}
-main .part6 .service_list li .service_info p {}
-main .part6 .service_list li .service_info a {}
+main .part6 .service_list li .service_info {color:#fff;}
+main .part6 .service_list li .service_info h3 {font-size: 1.875rem; font-weight: 700;}
+main .part6 .service_list li .service_info p {
+    margin:20px 0; font-size: 1.25rem;
+}
+main .part6 .service_list li .service_info a {
+    color:#fff; text-decoration: underline;
+}
 /* part7 */
-main .part7 {}
-main .part7 .title {}
-main .part7 .title .sub_title {}
-main .part7 .title .main_title {}
-main .part7 .title p {}
+main .part7 {background-color: #0058ab; border-radius: 500px 0 0 0; padding: 200px 300px;}
+main .part7 .title {padding:0;}
+main .part7 .title .sub_title {color:#FFB320;}
+main .part7 .title .main_title {color:#fff;}
+main .part7 .title p {font-size: 1.875rem; color:#fff;}
 main .part7 #participation_frm {}
 main .part7 #participation_frm fieldset {}
 main .part7 #participation_frm fieldset .skip {}
-main .part7 #participation_frm fieldset ul {}
-main .part7 #participation_frm fieldset ul li {}
-main .part7 #participation_frm fieldset ul li span {}
-main .part7 #participation_frm fieldset ul li input[name^=user] {}
-main .part7 #participation_frm fieldset ul li .gender_check {}
-main .part7 #participation_frm fieldset ul li .gender_check input[name=gender] {}
-main .part7 #participation_frm fieldset ul li .gender_check label[for=male] {}
-main .part7 #participation_frm fieldset ul li .gender_check label[for=female] {}
-main .part7 #participation_frm fieldset ul li #user_contents {}
-main .part7 #participation_frm fieldset ul li #photo_btn {}
-main .part7 #participation_frm fieldset ul li #photo_btn img {}
-main .part7 #participation_frm fieldset #submit_btn {}
+main .part7 #participation_frm fieldset ul {
+    background-color: #fff; margin: 0 auto;
+    text-align: center; margin:100px 0; padding:100px;
+    border-radius: 20px;
+}
+main .part7 #participation_frm fieldset ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+main .part7 #participation_frm fieldset ul li:last-child {
+    margin:0;
+}
+main .part7 #participation_frm fieldset ul li span {
+    font-size: 1.563rem; width:200px; text-align: left;
+}
+main .part7 #participation_frm fieldset ul li input[name^=user],
+main .part7 #participation_frm fieldset ul li #user_contents{
+    width:900px; line-height: 50px; border-radius: 500px; border:0; background-color: #F0F0F0; font-size: 1.25rem;
+    padding: 0 30px;
+}
+main .part7 #participation_frm fieldset ul li input[name^=user]:focus,
+main .part7 #participation_frm fieldset ul li #user_contents:focus {outline: none;}
+main .part7 #participation_frm fieldset ul li .gender_check {
+    width:900px; background-color: aqua; text-align: left;
+    height: 60px; display: flex; align-items: center;
+}
+main .part7 #participation_frm fieldset ul li .gender_check input[name=gender] {display: none;}
+main .part7 #participation_frm fieldset ul li .gender_check input[name=gender]:checked + label {
+    background-image: url(../images/radio_checked.svg);
+}
+main .part7 #participation_frm fieldset ul li .gender_check label {
+    background-image: url(../images/radio_button_unchecked.svg);
+    background-repeat: no-repeat; background-color: lime;
+    padding-left: 42px; height:50px; display: flex;
+    align-items: center;
+}
+main .part7 #participation_frm fieldset ul li .gender_check label:last-child {margin-left: 132px;}
+main .part7 #participation_frm fieldset ul li #user_contents {
+    border-radius:20px; padding: 10px 30px; height:300px;
+}
+main .part7 #participation_frm fieldset ul li #photo_btn {
+    height: 60px; border-radius: 500px;
+    background-color: #fff; border:1px solid #ddd;
+    display:flex; align-items: center; justify-content: space-between; padding: 20px 30px; font-size: 1.25rem;
+}
+main .part7 #participation_frm fieldset ul li #photo_btn img {margin-right:10px;}
+main .part7 #participation_frm fieldset #submit_btn {
+    width:100%; line-height: 80px; border-radius: 500px;
+    background-color: #1f1f1f; color:#FBD914; border:0;
+    font-size: 1.875rem;
+}
 /* part8 */
-main .part8 {}
+main .part8 {
+    background-color: #FFB320; text-align: center;
+    padding:200px 0;
+}
 main .part8 .counter {}
-main .part8 .counter span {}
-main .part8 .counter span em {}
+main .part8 .counter span {
+    font-size: 3.75rem; line-height: 1.7;
+}
+main .part8 .counter span em {
+    font-size: 4.375rem; color: #0058ab;
+}
+main .part8 .counter span,
+main .part8 .counter span em {font-weight: 700;}
 main .part8 .participate_slide {}
-main .part8 .participate_slide .swiper-wrapper {}
-main .part8 .participate_slide .swiper-wrapper .swiper-slide {}
-main .part8 .participate_slide .swiper-wrapper .swiper-slide img {}
-main .part8 a {}
+main .part8 .participate_slide .swiper-wrapper {
+    margin:80px 0;
+}
+main .part8 .participate_slide .swiper-wrapper .swiper-slide {
+    width:537px;
+}
+main .part8 .participate_slide .swiper-wrapper .swiper-slide img {width:100%; border-radius: 20px;}
+main .part8 a {
+    background-color: #fff; height:85px; width:415px;
+    display: flex; align-items: center; justify-content: space-between; margin:0 auto;
+    border-radius: 500px; font-size: 1.875rem; padding:20px 50px;
+}
 main .part8 a img {}
 /* footer */
-footer {}
-footer .sns {}
-footer .sns a {}
+footer {
+    background-color: #1f1f1f; padding:100px 0; font-size: 1.25rem; color:#fff; text-align: center;
+}
+footer .sns {margin-bottom: 89px;}
+footer .sns a {margin-right: 100px;}
+footer .sns a:last-child {margin:0;}
 footer .sns a img {}
-footer .ikea_info {}
-footer .ikea_info > span {}
+footer .ikea_info {margin-bottom: 50px;}
+footer .ikea_info > span {margin-right: 319px;}
 footer .ikea_info a {}
 footer .ikea_info a span {}
-footer .ikea_info2 {}
-footer .ikea_info2 span {}
-footer .ikea_info2 span a {}
+footer .ikea_info2 {
+    display:flex; flex-flow: column nowrap;
+    width:1320px; margin:0 auto; text-align: left;
+}
+footer .ikea_info2 > span {
+    margin-bottom: 10px; font-weight: 300;
+}
+footer .ikea_info2 > span:last-child {
+    margin-bottom: 0;
+}
+footer .ikea_info2 > span a {
+    color:#fff; text-decoration: underline;
+}
