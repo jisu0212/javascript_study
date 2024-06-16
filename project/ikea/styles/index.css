@@ -9,28 +9,32 @@ main .part .title {
     padding: 0 300px;
 }
 main .part .title .sub_title {
-    font-size: 1.875rem;
+    font-size: 1.25rem;
     color:#0058ab;
     font-weight: 700;
 }
 main .part .title .main_title {
-    font-size: 4.375rem;
+    font-size: 3.125rem;
     font-weight: 700;
-    line-height: 1.5;
+    line-height: 1.7;
 }
+main .part5 .more_wrap .more_link,
+main .part7 #participation_frm fieldset ul li #photo_btn,
+main .part8 a,
+main .part6 .service_list li {transition: 0.3s;}
+main .part5 .more_wrap .more_link:hover,
+main .part7 #participation_frm fieldset ul li #photo_btn:hover,
+main .part8 a:hover,
+main .part6 .service_list li:hover {background-color: #ddd; transform: translateY(5px);}
 /* part1 */
-main .part1 {}
-main .part1 .main_video {
-    position:relative;
-    height:950px;
-    overflow:hidden;
-}
+main .part1 {position:relative;}
+main .part1 .main_video {overflow:hidden;}
 main .part1 .main_video video {width:100%;}
 main .part1 .part1_contents {
     background-image: linear-gradient(rgba(31,31,31,0.3) 0,rgba(31,31,31,1));
-    padding:50px 300px;
+    padding:97px 300px;
     position:absolute; bottom:0;
-    width:100%;
+    width:100%; height:512px;
 }
 main .part1 .part1_contents h1 {width:133px;}
 main .part1 .part1_contents h1 a {}
@@ -78,19 +82,19 @@ main .part2 .part2_bg .part2_intro2 .whynot h3 {
     background-size: 100%;
     background-position: center;
     font-size: 6.25rem;
-    font-weight: 700;
+    font-weight: 600;
     color:#FFB320;
+    height:165px;
 }
 main .part2 .part2_bg .part2_intro2 p {
-    width:1321px; height: 852px; margin:43px auto;
+    width:calc(100% - 600px); margin:43px auto;
     border-radius: 20px; overflow: hidden;
 }
 main .part2 .part2_bg .part2_intro2 p img {
     width: 101%;
 }
-main .part2 .part2_bg .part2_intro2 h3 {
+main .part2 .part2_bg .part2_intro2 > h3 {
     font-size: 4.375rem;
-    font-weight: 700;
     color:#FFB320;
     line-height: 1.5;
 }
@@ -102,7 +106,7 @@ main .part3 {
 main .part3 .title {}
 main .part3 .title .sub_title {}
 main .part3 .title .main_title {}
-main .part3 .part3_content {margin:118px 0;}
+main .part3 .part3_content {margin:118px 0; overflow:hidden;}
 main .part3 .part3_content .content_img {
     width:1470px; height: 577px; border-radius: 0 500px 500px 0;
     overflow: hidden;
@@ -111,14 +115,16 @@ main .part3 .part3_content .content_img img {
     width:100%; position:relative; bottom:180px;
 }
 main .part3 .part3_content .content_text {
-    width:100%;
+    width:100%; float: right;
     position:relative;
     margin-top:100px;
 }
 main .part3 .part3_content .content_text p {
-    font-size: 1.875rem;
+    width:968px;
+    font-size: 1.563rem;
     line-height: 1.7;
     text-align: center;
+    margin: 0 auto;
 }
 main .part3 .part3_content .content_text::after {
     content: ''; display:inline-block;
@@ -127,11 +133,11 @@ main .part3 .part3_content .content_text::after {
 }
 /* part3-cooking */
 main .part3 .part3_content:last-child {
-    border: 5px solid red; text-align: right;
+    text-align: right;
 }
 main .part3 .part3_content:last-child .content_img {
     border-radius: 500px 0 0 500px; 
-    border: 5px solid red; text-align: right;
+    float: right;
 }
 main .part3 .part3_content:last-child .content_img img {
     bottom:300px;
@@ -143,6 +149,8 @@ main .part3 .part3_content:last-child .content_text::after {
 main .part4 {
     width:100%; height:883px;
     background-image: url(../images/event_ikea.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 /* part5 */
 main .part5 {
@@ -188,13 +196,18 @@ main .part5 .product_list > li .product_info li h2 span {
     font-size: 1.875rem; font-weight: 700;
 }
 main .part5 .product_list > li .product_info li a:first-child{margin-right:20px;}
-main .part5 .product_list > li .product_info li a img {}
-main .part5 .more_wrap {text-align: right; background-color: red; margin: 0 300px;}
+main .part5 .product_list > li .product_info li a img {
+    transition: 0.3s;
+}
+main .part5 .product_list > li .product_info li a img:hover {transform: translateY(5px);}
+main .part5 .more_wrap {overflow: hidden; padding: 0 300px; height:71px;}
 main .part5 .more_wrap .more_link {
     background-color: #fff;
     border-radius: 500px;
     width:213px; height: 66px; padding:0 30px;
     display:flex; align-items: center; justify-content: space-between; font-size: 1.25rem;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+    float:right;
 }
 main .part5 .more_wrap .more_link span {}
 main .part5 .more_wrap .more_link img {}
@@ -205,15 +218,13 @@ main .part6 .title .sub_title {}
 main .part6 .title .main_title {}
 main .part6 .service_list {
     display: flex; justify-content: space-between;
-    width:1320px; margin: 89px auto 0;
+    flex-flow: row wrap;
+    width:calc(100% - 600px); margin: 89px auto 0;
 }
 main .part6 .service_list li {
     width:350px; height:350px;
     border-radius: 50%; display:flex; flex-flow: column nowrap;
     align-items: center; justify-content: center; text-align: center;
-}
-main .part6 .service_list li:hover {
-    position:relative; bottom:15px;
 }
 main .part6 .service_list li:first-child {background-color: #0058ab;}
 main .part6 .service_list li:nth-child(2) {background-color: #FFB320;}
@@ -229,17 +240,16 @@ main .part6 .service_list li .service_info a {
     color:#fff; text-decoration: underline;
 }
 /* part7 */
-main .part7 {background-color: #0058ab; border-radius: 500px 0 0 0; padding: 200px 300px;}
-main .part7 .title {padding:0;}
+main .part7 {background-color: #0058ab; border-radius: 500px 0 0 0; padding: 200px 0; text-align: center;}
+main .part7 .title {width:100%;text-align: left; margin: 0 auto; padding:0 300px;}
 main .part7 .title .sub_title {color:#FFB320;}
 main .part7 .title .main_title {color:#fff;}
-main .part7 .title p {font-size: 1.875rem; color:#fff;}
+main .part7 .title p {font-size: 1.25rem; color:#fff; line-height: 1.7; margin-top: 20px;}
 main .part7 #participation_frm {}
 main .part7 #participation_frm fieldset {}
 main .part7 #participation_frm fieldset .skip {}
 main .part7 #participation_frm fieldset ul {
-    background-color: #fff; margin: 0 auto;
-    text-align: center; margin:100px 0; padding:100px;
+    background-color: #fff; margin: 100px auto;padding:100px; width: calc(100% - 600px);
     border-radius: 20px;
 }
 main .part7 #participation_frm fieldset ul li {
@@ -253,16 +263,19 @@ main .part7 #participation_frm fieldset ul li:last-child {
 main .part7 #participation_frm fieldset ul li span {
     font-size: 1.563rem; width:200px; text-align: left;
 }
+main .part7 #participation_frm fieldset ul li:nth-child(5) {
+    display: flex; flex-flow: row nowrap; align-items: flex-start;
+}
 main .part7 #participation_frm fieldset ul li input[name^=user],
 main .part7 #participation_frm fieldset ul li #user_contents{
     width:900px; line-height: 50px; border-radius: 500px; border:0; background-color: #F0F0F0; font-size: 1.25rem;
-    padding: 0 30px;
+    padding: 0 30px; 
 }
 main .part7 #participation_frm fieldset ul li input[name^=user]:focus,
 main .part7 #participation_frm fieldset ul li #user_contents:focus {outline: none;}
 main .part7 #participation_frm fieldset ul li .gender_check {
-    width:900px; background-color: aqua; text-align: left;
-    height: 60px; display: flex; align-items: center;
+    width:900px; text-align: left;
+    height: 60px; display: flex; flex-flow:row nowrap; align-items: center;
 }
 main .part7 #participation_frm fieldset ul li .gender_check input[name=gender] {display: none;}
 main .part7 #participation_frm fieldset ul li .gender_check input[name=gender]:checked + label {
@@ -270,9 +283,8 @@ main .part7 #participation_frm fieldset ul li .gender_check input[name=gender]:c
 }
 main .part7 #participation_frm fieldset ul li .gender_check label {
     background-image: url(../images/radio_button_unchecked.svg);
-    background-repeat: no-repeat; background-color: lime;
-    padding-left: 42px; height:50px; display: flex;
-    align-items: center;
+    background-repeat: no-repeat;
+    padding: 5px 0 0 42px; font-size: 1.25rem; height:32px;
 }
 main .part7 #participation_frm fieldset ul li .gender_check label:last-child {margin-left: 132px;}
 main .part7 #participation_frm fieldset ul li #user_contents {
@@ -282,12 +294,16 @@ main .part7 #participation_frm fieldset ul li #photo_btn {
     height: 60px; border-radius: 500px;
     background-color: #fff; border:1px solid #ddd;
     display:flex; align-items: center; justify-content: space-between; padding: 20px 30px; font-size: 1.25rem;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
 }
 main .part7 #participation_frm fieldset ul li #photo_btn img {margin-right:10px;}
 main .part7 #participation_frm fieldset #submit_btn {
-    width:100%; line-height: 80px; border-radius: 500px;
+    width:calc(100% - 600px); line-height: 80px; border-radius: 500px;
     background-color: #1f1f1f; color:#FBD914; border:0;
-    font-size: 1.875rem;
+    font-size: 1.875rem; transition:0.3s;
+}
+main .part7 #participation_frm fieldset #submit_btn:hover {
+    background-color: #333333; color: #FFB320; transform: translateY(5px);
 }
 /* part8 */
 main .part8 {
@@ -314,21 +330,28 @@ main .part8 .participate_slide .swiper-wrapper .swiper-slide img {width:100%; bo
 main .part8 a {
     background-color: #fff; height:85px; width:415px;
     display: flex; align-items: center; justify-content: space-between; margin:0 auto;
-    border-radius: 500px; font-size: 1.875rem; padding:20px 50px;
+    border-radius: 500px; font-size: 1.875rem; padding:20px 50px; box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
 }
 main .part8 a img {}
 /* footer */
 footer {
-    background-color: #1f1f1f; padding:100px 0; font-size: 1.25rem; color:#fff; text-align: center;
+    background-color: #1f1f1f; padding:100px 0; font-size: 1.25rem; color:#fff;
 }
-footer .sns {margin-bottom: 89px;}
+footer .sns {margin-bottom: 89px; text-align: center; height:56px;}
 footer .sns a {margin-right: 100px;}
 footer .sns a:last-child {margin:0;}
-footer .sns a img {}
-footer .ikea_info {margin-bottom: 50px;}
-footer .ikea_info > span {margin-right: 319px;}
-footer .ikea_info a {}
-footer .ikea_info a span {}
+footer .sns a img {transition: 0.3s;}
+footer .sns a img:hover {transform: translateY(-10px);}
+footer .ikea_info {
+    margin: 0 auto 50px; width:1320px;
+    display: flex; flex-flow:row nowrap; justify-content: space-between;
+}
+footer .ikea_info > p {margin-right: 319px;}
+footer .ikea_info .info_link a {margin-right:45px;}
+footer .ikea_info .info_link a:last-child {margin:0;}
+footer .ikea_info .info_link a span {color:#fff; text-decoration: underline;}
+footer .ikea_info .info_link a span:hover,
+footer .ikea_info2 > span a:hover {color:#8d8d8d;}
 footer .ikea_info2 {
     display:flex; flex-flow: column nowrap;
     width:1320px; margin:0 auto; text-align: left;
